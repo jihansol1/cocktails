@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find your Cocktail</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-brand">
+            <i class="fas fa-cocktail"></i> CockTail Finder
+        </a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="login.html" class="nav-link" id="loginLink">Login</a>
+            <a href="favorites.html" class="nav-link" id="favoritesLink" style="display:none;">Favorites</a>
+            <a href="mybar.html" class="nav-link" id="mybarLink" style="display:none;">My Bar</a>
+            <a href="#" class="nav-link" id="logoutLink" style="display:none;">Logout</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="hero">
+        <h1>Discover Your Next Favorite Cocktail</h1>
+        <p>Search thousands of cocktail recipes and build your personal collection</p>
+    </div>
+
+    <div class="search-section">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search for a cocktail...">
+            <button id="searchBtn"><i class="fas fa-search"></i> Search</button>
+            <button id="randomBtn" class="secondary"><i class="fas fa-random"></i> Random</button>
+        </div>
+
+        <div class="filter-box">
+            <select id="categoryFilter">
+                <option value="">All Categories</option>
+            </select>
+            <select id="alcoholFilter">
+                <option value="">Alcoholic & Non</option>
+                <option value="Alcoholic">Alcoholic</option>
+                <option value="Non_Alcoholic">Non-Alcoholic</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="resultsContainer" class="results-grid">
+        <!-- Results populated here -->
+    </div>
+
+    <div id="noResults" class="no-results" style="display:none;">
+        <i class="fas fa-glass-martini-alt"></i>
+        <p>No cocktails found. Try a different search!</p>
+    </div>
+</div>
+
+<!-- Drink Detail Modal -->
+<div id="drinkModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div id="modalBody">
+            <!-- Drink details populated here -->
+        </div>
+    </div>
+</div>
+
+<script src="js/index.js"></script>
+</body>
+</html>
