@@ -127,8 +127,8 @@ A full-stack web application for discovering, searching, and saving cocktail rec
 #### 1. Clone the repository
 
 ```bash
-git clone https://github.com/jihansol1/mixmaster.git
-cd mixmaster
+git clone https://github.com/jihansol1/cocktail.git
+cd cocktail
 ```
 
 #### 2. Set up the database
