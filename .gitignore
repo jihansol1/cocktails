@@ -1,11 +1,11 @@
 # ========================
 # DATABASE CREDENTIALS
 # ========================
-# NEVER commit these files
+# Ignore the actual credentials file
 src/main/resources/db.properties
-**/db.properties
-*.properties
-!*.properties.example
+
+# DO NOT ignore the example/template file
+!src/main/resources/db.properties.example
 
 # ========================
 # IDE - IntelliJ IDEA
