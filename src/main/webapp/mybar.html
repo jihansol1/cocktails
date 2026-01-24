@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CockTail - My Bar</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-brand">
+            <i class="fas fa-cocktail"></i> CockTail Finder
+        </a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="favorites.html" class="nav-link" id="favoritesLink">Favorites</a>
+            <a href="mybar.html" class="nav-link active" id="mybarLink">My Bar</a>
+            <a href="#" class="nav-link" id="logoutLink">Logout</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="page-header">
+        <h1><i class="fas fa-chart-bar"></i> My Bar Analytics</h1>
+        <p>Your cocktail collection at a glance</p>
+    </div>
+
+    <!-- Stats Cards -->
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-glass-martini-alt"></i></div>
+            <div class="stat-value" id="totalDrinks">0</div>
+            <div class="stat-label">Total Drinks</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-wine-bottle"></i></div>
+            <div class="stat-value" id="alcoholicCount">0</div>
+            <div class="stat-label">Alcoholic</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-mug-hot"></i></div>
+            <div class="stat-value" id="nonAlcoholicCount">0</div>
+            <div class="stat-label">Non-Alcoholic</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-list"></i></div>
+            <div class="stat-value" id="avgIngredients">0</div>
+            <div class="stat-label">Avg Ingredients</div>
+        </div>
+    </div>
+
+    <!-- Breakdowns -->
+    <div class="breakdown-grid">
+        <div class="breakdown-card">
+            <h3><i class="fas fa-tags"></i> Categories</h3>
+            <div id="categoryBreakdown" class="breakdown-list">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+        <div class="breakdown-card">
+            <h3><i class="fas fa-flask"></i> Base Spirits</h3>
+            <div id="spiritBreakdown" class="breakdown-list">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+        <div class="breakdown-card">
+            <h3><i class="fas fa-wine-glass"></i> Glass Types</h3>
+            <div id="glassBreakdown" class="breakdown-list">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Collection List -->
+    <div class="collection-section">
+        <h2><i class="fas fa-list-ul"></i> Your Collection</h2>
+        <div id="collectionList" class="collection-grid">
+            <!-- Populated by JS -->
+        </div>
+    </div>
+
+    <div id="emptyBar" class="no-results" style="display:none;">
+        <i class="fas fa-glass-whiskey"></i>
+        <p>Your bar is empty!</p>
+        <a href="index.html" class="btn-link">Start Adding Drinks</a>
+    </div>
+</div>
+
+<script src="js/mybar.js"></script>
+</body>
+</html>
