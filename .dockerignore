@@ -1,0 +1,7 @@
+.idea/
+*.iml
+.git/
+.gitignore
+screenshots/
+*.log
+src/main/resources/db.properties
